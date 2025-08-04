@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="card card-secondary">
+        <div class="card-header">
+            <h3 class="card-title">Upload Document:</h3>
+            <div class="card-tools" bis_skin_checked="1">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row justify-content-between">
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="form-check">
+                        <font class="upload_control d-inline-block">Profile Image <i class="fa fa-camera"></i></font>
+                        <input type="file" name="file_UploadImage" id="file_UploadImage" tabindex="45"
+                            autocomplete="off" validationgroup="uploadprof" class="FileUpld_brdr">
+                        <span class="text-danger font-14">Allowed Format: jpg,jpeg,png</span>
+                    </div>
+                    <div class="d-inline-block">
+                        <div class="form-group mb-0">
+                            <input type="button" name="btn_UploadProfImage" value="Upload Image"
+                                id="btn_UploadProfImage" tabindex="46" class="btn btn-primary btn-save-new">
+                        </div>
+                        <div id="uploadResult"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="form-check">
+                        <font class="upload_control d-inline-block">PAN Card <i class="fa fa-camera"></i></font>
+                        <input type="file" name="file_PANCard" id="file_PANCard" tabindex="47" autocomplete="off"
+                            class="FileUpld_brdr" validationgroup="uploadPAN">
+                        <span class="text-danger font-14">Allowed Format: jpg,jpeg,png</span>
+
+                    </div>
+
+                    <div class="d-inline-block">
+                        <div class="form-group mb-0">
+                            <input type="button" name="btn_UploadPAN" value="Upload Image" id="btn_UploadPAN"
+                                tabindex="48" class="btn btn-primary btn-save-new" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr class="hr_1">
+
+
+            <div class="row justify-content-between">
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="form-check">
+                        <font class="upload_control d-inline-block">AAdhaar Card <i class="fa fa-camera"></i></font>
+                        <input type="file" name="file_Aadhar" id="file_Aadhar" tabindex="49" autocomplete="off"
+                            validationgroup="uploadAadhar" class="FileUpld_brdr">
+                        <span class="text-danger font-14">Allowed Format: jpg,jpeg,png</span>
+
+                    </div>
+
+                    <div class="d-inline-block">
+                        <div class="form-group mb-0">
+                            <input type="button" name="btn_Aadhar" value="Upload Image" id="btn_Aadhar" tabindex="50"
+                                class="btn btn-primary btn-save-new" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="form-check">
+                        <font class="upload_control d-inline-block">Cheque Book <i class="fa fa-camera"></i></font>
+                        <input type="file" name="file_Cheque" id="file_Cheque" tabindex="51" autocomplete="off"
+                            validationgroup="uploadcheque" class="FileUpld_brdr">
+                        <span class="text-danger font-14">Allowed Format: jpg,jpeg,png</span>
+
+                    </div>
+
+                    <div class="d-inline-block">
+                        <div class="form-group mb-0">
+                            <input type="button" name="btn_Cheque" value="Upload Image" id="btn_Cheque" tabindex="52"
+                                class="btn btn-primary btn-save-new" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <hr class="hr_1">
+
+
+            <div class="row justify-content-between">
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="form-check">
+                        <font class="upload_control d-inline-block">Appointment Letter <i class="fa fa-camera"></i>
+                        </font>
+                        <input type="file" name="File_Appointment" id="File_Appointment" tabindex="53"
+                            autocomplete="off" validationgroup="uploadAppointment" class="FileUpld_brdr">
+                        <span class="text-danger font-14">Allowed Format: jpg,jpeg,png</span>
+
+                    </div>
+
+                    <div>
+                        <div class="form-group mb-0">
+                            <input type="button" name="btn_Appointment" value="Upload Image" id="btn_Appointment"
+                                tabindex="54" class="btn btn-primary btn-save-new" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="form-check">
+                        <font class="upload_control d-inline-block">Experience Letter <i class="fa fa-camera"></i>
+                        </font>
+                        <input type="file" name="File_ExpLetter" id="File_ExpLetter" tabindex="55" autocomplete="off"
+                            validationgroup="uploadExpLetter" class="FileUpld_brdr">
+                        <span class="text-danger font-14">Allowed Format: jpg,jpeg,png</span>
+
+                    </div>
+
+                    <div class="d-inline-block">
+                        <div class="form-group mb-0">
+                            <input type="button" name="btn_FileUpload_EXP" value="Upload Image" id="btn_FileUpload_EXP"
+                                tabindex="56" class="btn btn-primary btn-save-new" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h4>Uploaded Files</h4>
+            <div>
+
+
+                <table cellspacing="0" class="table table-border table-hover" border="1" id="fileTable"
+                    style="border-collapse:collapse;">
+                    <thead>
+                        <tr>
+                            <th scope="col">File Name</th>
+                            <th scope="col">Open File</th>
+                            <th scope="col">Download File</th>
+                            <th scope="col">Delete File</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+            </div>
+        </div>
+        <!--</div>-->
+        <div class="col-md-12">
+            <div class="form-group text-center">
+                <input type="button" name="btn_InsertAgentInfo" value="Update Agent Details" id="btn_UpdateAgentInfo"
+                    class="btn btn-primary btn-save-new" onclick="UpdateAgentDetails()">
+            </div>
+        </div>
+        <!-------Exit---->
+    </div>
+	 
+</body>
+
+</html>
